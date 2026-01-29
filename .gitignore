@@ -47,3 +47,5 @@ excelassistantapp-6d84b7ae0d43.json
 
 # Logs
 *.log
+.streamlit/secrets.toml
+*.json
