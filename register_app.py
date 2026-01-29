@@ -19,7 +19,7 @@ scope = [
     "https://spreadsheets.google.com/feeds",
     "https://www.googleapis.com/auth/drive"
 ]
-
+service_account_info = st.secrets["excel-assistant-bot@excelassistantapp.iam.gserviceaccount.com"]
 creds = ServiceAccountCredentials.from_json_keyfile_name(
     "excelassistantapp-6d84b7ae0d43.json",
     scope
