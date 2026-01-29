@@ -28,6 +28,7 @@ except:
         service_account_info = json.load(f)
 
 creds = ServiceAccountCredentials.from_json_keyfile_dict(service_account_info, scope)
+st.write("Authenticated as:", service_account_info.get("client_email"))
 client = gspread.authorize(creds)
 
 sheet = client.open("App Users").sheet1  # Must be shared with service account
