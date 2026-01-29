@@ -2,6 +2,7 @@ import streamlit as st
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
+import json
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(page_title="Excel Assistant", layout="wide")
@@ -15,15 +16,18 @@ if "user_name" not in st.session_state:
     st.session_state.user_name = ""
 
 # ---------------- GOOGLE SHEETS SETUP ----------------
-scope = [
-    "https://spreadsheets.google.com/feeds",
-    "https://www.googleapis.com/auth/drive"
-]
-service_account_info = st.secrets["excel-assistant-bot@excelassistantapp.iam.gserviceaccount.com"]
-creds = ServiceAccountCredentials.from_json_keyfile_name(
-    "excelassistantapp-6d84b7ae0d43.json",
-    scope
-)
+scope = ['https://www.googleapis.com/auth/spreadsheets',
+         'https://www.googleapis.com/auth/drive']
+
+try:
+    # Use Streamlit secrets if available (for deployment)
+    service_account_info = st.secrets["google_service_account"]
+except:
+    # Local fallback to JSON file
+    with open("excelassistantapp-6d84b7ae0d43.json") as f:
+        service_account_info = json.load(f)
+
+creds = ServiceAccountCredentials.from_json_keyfile_dict(service_account_info, scope)
 client = gspread.authorize(creds)
 
 sheet = client.open("App Users").sheet1  # Must be shared with service account
