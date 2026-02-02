@@ -51,9 +51,31 @@
     section h2 { text-align:center; margin-bottom:50px; font-size:2rem; color:#4CAF50; }
 
     /* About / Skills */
-    .about { display:flex; flex-wrap:wrap; gap:40px; align-items:left; justify-content:left; }
-    .about img { width:250px; border-radius:50%; }
-    .about .info { max-width:600px; line-height:1.6; }
+    /* About Section */
+#about {
+  width: 100%;
+  padding: 80px 8%;      /* breathing space from edges */
+  background: #f4f7f8;
+}
+
+#about h2 {
+  text-align: center;
+  color: #6fb36f;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.about {
+  max-width: 1200px;     /* wider content like real websites */
+  margin: 0 auto;
+}
+
+.about .info {
+  text-align: left;      /* IMPORTANT: not centered */
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
+}
 
     .skills { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
     .skill { background:#fff; padding:15px 25px; border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:0.3s; }
@@ -90,22 +112,50 @@
   </header>
 
   <!-- About -->
-  <section id="about" align = "center">
-    <h2>About Me</h2>
-    <div class="about">
-      <!--<img src="https://via.placeholder.com/250" alt="Rathika"> -->
-      <div class="info" align="left">
-        <p>Hi, I'm Rathika Mani, AI and Machine Learning professional with strong experience spanning intelligent systems, robotics simulation, computer vision and data-driven application development. I specialize in building scalable, reliable, and intelligent solutions that translate complex algorithms into real-world impact.
+  <section id="about">
+  <h2>About Me</h2>
 
-I have developed interactive AI systems, including RAG-based chatbots, and applied neural networks across multiple computer vision projects such as facial recognition and object detection. My work also includes time-series modeling and stock market prediction, along with extensive experience in machine learning and data science, covering supervised and unsupervised learning, analytics, and model evaluation.
+  <div class="about">
+    <div class="info">
+      <p>
+        Hi, I’m Rathika Mani, an AI and Machine Learning professional with strong experience
+        spanning intelligent systems, robotics simulation, computer vision, and data-driven
+        application development. I specialize in building scalable, reliable, and intelligent
+        solutions that translate complex algorithms into real-world impact.
+      </p>
 
-Alongside research and academic work, I bring automotive industry experience in vehicle validation and system testing, including infotainment platforms, ECU communication protocols, diagnostics, and test case design and execution. This industry background has strengthened my approach to system integration, reliability, and safety-critical software, bridging engineering rigor with AI innovation.
+      <p>
+        I have developed interactive AI systems, including RAG-based chatbots, and applied
+        neural networks across multiple computer vision projects such as facial recognition
+        and object detection. My work also includes time-series modeling and stock market
+        prediction, along with extensive experience in machine learning and data science,
+        covering supervised and unsupervised learning, analytics, and model evaluation.
+      </p>
 
-Currently, I am engaged in reinforcement learning–based robotics simulation research, focusing on autonomous navigation and localization using visual light communication. This work emphasizes perception-driven decision making, adaptive control, and simulation-to-real considerations for intelligent robotic systems.
+      <p>
+        Alongside research and academic work, I bring automotive industry experience in
+        vehicle validation and system testing, including infotainment platforms, ECU
+        communication protocols, diagnostics, and test case design and execution. This
+        background has strengthened my approach to system integration, reliability, and
+        safety-critical software.
+      </p>
 
-I am highly motivated by research-driven development and thrive at the intersection of theory, engineering, and applied AI. I enjoy tackling complex problems, collaborating across disciplines, and building solutions that are not only innovative, but also practical, robust, and scalable.
+      <p>
+        Currently, I am engaged in reinforcement learning–based robotics simulation research,
+        focusing on autonomous navigation and localization using visual light communication.
+        This work emphasizes perception-driven decision making, adaptive control, and
+        simulation-to-real considerations for intelligent robotic systems.
+      </p>
 
-</p>
+      <p>
+        I am highly motivated by research-driven development and thrive at the intersection
+        of theory, engineering, and applied AI, building solutions that are innovative,
+        practical, robust, and scalable.
+      </p>
+    </div>
+  </div>
+
+
         <div class="skills" align="center">
           <div class="skill">Python</div>
           <div class="skill">Machine Learning</div>
@@ -117,8 +167,8 @@ I am highly motivated by research-driven development and thrive at the intersect
           <div class="skill">Google API</div>
           <div class="skill">Web Development</div>
         </div>
-      </div>
-    </div>
+      
+    
   </section>
 
   <!-- Projects -->
