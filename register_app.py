@@ -119,7 +119,7 @@ if not st.session_state.authenticated:
         email = st.text_input("Email")
         location = st.text_input("Location")
         role = st.selectbox("Role", ["Student", "Professional", "Other"])
-        submit = st.form_submit_button("Register")
+        submit = st.form_submit_button("Download & Access App")
 
     if submit:
         email = normalize_email(email)
@@ -179,7 +179,7 @@ st.markdown(
         <p>
             © 2026 Excel Assistant · Powered by Streamlit & Google Cloud · All rights reserved <br></p>
         <p>     
-            📬 Contact: <a href="mailto:rathikathiru19@gmail.com" style="color:#4da3ff;">rathikathiru19@gmail.com</a> 
+            📬 Contact: <a href="mailto:rathikam@umich.edu" style="color:#4da3ff;">rathikam@umich.edu</a> 
         </p>      
     </div>
     """,
