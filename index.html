@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rathika Mani | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
+
+    body { font-family: 'Roboto', sans-serif; background: #f4f7f8; color:#333; }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Header / Hero */
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2196F3);
+      color: white;
+      height: 100vh;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:0 20px;
+    }
+
+    header h1 { font-size: 3rem; margin-bottom:10px; }
+    header p { font-size:1.2rem; margin-bottom:20px; }
+
+    header a {
+      display:inline-block;
+      padding:12px 25px;
+      background:white;
+      color:#4CAF50;
+      border-radius:8px;
+      font-weight:bold;
+      transition: 0.3s;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+
+    header a:hover { background:#f0f0f0; }
+
+    /* Sections */
+    section { padding:80px 20px; max-width:1000px; margin:auto; }
+
+    section h2 { text-align:center; margin-bottom:50px; font-size:2rem; color:#4CAF50; }
+
+    /* About / Skills */
+    /* About Section */
+#about {
+  width: 100%;
+  padding: 80px 8%;      /* breathing space from edges */
+  background: #f4f7f8;
+}
+
+#about h2 {
+  text-align: center;
+  color: #6fb36f;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.about {
+  max-width: 1200px;     /* wider content like real websites */
+  margin: 0 auto;
+}
+
+.about .info {
+  text-align: justify;
+  text-justify: inter-word;   /* improves spacing */
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
+}
+.about .info p {
+  margin-bottom: 18px;
+}
+
+    .skills { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .skill { background:#fff; padding:15px 25px; border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:0.3s; }
+    .skill:hover { transform:translateY(-5px); box-shadow:0 12px 25px rgba(0,0,0,0.15); }
+
+    /* Projects */
+    .projects { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .project-card { background:white; padding:20px; border-radius:15px; width:250px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .project-card:hover { transform: translateY(-10px); box-shadow:0 15px 30px rgba(0,0,0,0.2); }
+    .project-card h3 { margin-bottom:15px; color:#4CAF50; }
+    .project-card p { margin-bottom:15px; }
+    .project-card a { display:inline-block; padding:10px 20px; background:#2196F3; color:white; border-radius:8px; transition:0.3s; }
+    .project-card a:hover { background:#0b7dda; }
+
+    /* Footer */
+    footer { background:#333; color:white; text-align:center; padding:40px 20px; }
+    footer a { color:#4CAF50; margin:0 10px; font-size:1.5rem; transition:0.3s; }
+    footer a:hover { color:#2196F3; }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .about { flex-direction:column; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>Rathika Mani</h1>
+    <p>Software & AI Enthusiast | Portfolio - App Developer</p>
+      <a href="https://excel-sheet-key-matcher-ir57xcrp2rcpqnbfxbqwa4.streamlit.app/" target="_blank">Excel Assistant - 2026</a>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+  <h2>About Me</h2>
+
+  <div class="about">
+    <div class="info">
+      <p>
+        Hi, I'm Rathika Mani, an AI and Machine Learning professional with strong experience
+        spanning intelligent systems, robotics simulation, computer vision, and data-driven
+        application development. I specialize in building scalable, reliable, and intelligent
+        solutions that translate complex algorithms into real-world impact.
+      </p>
+
+      <p>
+        I have developed interactive AI systems, including RAG-based chatbots, and applied
+        neural networks across multiple computer vision projects such as facial recognition
+        and object detection. My work also includes time-series modeling and stock market
+        prediction, along with extensive experience in machine learning and data science,
+        covering supervised and unsupervised learning, analytics, and model evaluation.
+      </p>
+
+      <p>
+        Alongside research and academic work, I bring automotive industry experience in
+        vehicle validation and system testing, including infotainment platforms, ECU
+        communication protocols, diagnostics, and test case design and execution. This
+        background has strengthened my approach to system integration, reliability, and
+        safety-critical software.
+      </p>
+
+      <p>
+        Currently, I am engaged in reinforcement learning–based robotics simulation research,
+        focusing on autonomous navigation and localization using visual light communication.
+        This work emphasizes perception-driven decision making, adaptive control, and
+        simulation-to-real considerations for intelligent robotic systems.
+      </p>
+
+      <p>
+        I am highly motivated by research-driven development and thrive at the intersection
+        of theory, engineering, and applied AI, building solutions that are innovative,
+        practical, robust, and scalable.
+      </p>
+    </div>
+  </div>
+
+
+        <div class="skills" align="center">
+          <div class="skill">Artificial Intelligence</div>
+          <div class="skill">Machine Learning</div>
+          <div class="skill">Deep Learning</div>
+          <div class="skill">Neural Networks</div>
+          <div class="skill">Python</div>
+          <div class="skill">Data Science</div>
+          <div class="skill">Data Analytics</div>
+          <div class="skill">Algorithm Analysis</div>
+          <div class="skill">Robotics Simulation</div>
+          <div class="skill">Automotive</div>
+          <div class="skill">Streamlit</div>
+          <div class="skill">Google API</div>
+          <div class="skill">Web Development</div>
+        </div>
+      
+    
+  </section>
+
+  <!-- Projects -->
+  <!--
+  <section id="projects">
+    <h2>My First App</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Excel Assistant App</h3>
+        <p>Compare Excel & CSV files to find new, missing, and mismatched records.</p>
+        <a href="https://excel-sheet-key-matcher-ir57xcrp2rcpqnbfxbqwa4.streamlit.app/" target="_blank">Excell Assistant - 2026</a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://www.linkedin.com/in/rathika-mani/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:rathikathiru19@gmail.com"><i class="fas fa-envelope"></i></a>
+    <p>&copy; 2026 Rathika Mani</p>
+  </footer>
+
+</body>
+</html>
